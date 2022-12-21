@@ -29,4 +29,7 @@ to the user sorted by popularity (highest to lowest, where popularity score is n
 
 - `Option 6.) Revenue` When this option is selected, the system provides a month-by-month overview of revenue for the current calendar year, based on SQL‘s CURRENT DATE variable.
 
+## Notes:
+- MySQL injection safe queries by utilizing JDBC preparedStatement for security
+- Exception handling to prevent resource leaks of JDBC objects (e.g Connection, Statement,  ResultSet)
 
